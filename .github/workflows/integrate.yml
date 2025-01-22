@@ -1,0 +1,46 @@
+name: DevOps Portal CICD
+
+on:
+  push:
+    branches: [ main ]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    steps:
+    - uses: actions/checkout@v3
+    - name: Build and Push  
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '22.13.1'  # specify the version of Node.js you need
+
+    - name: Install dependencies
+      working-directory: ./presentation
+      run: npm install
+
+    - name: Install dependencies
+      working-directory: ./presentation
+      run: npm run build
+
+    - name: Setup Pages
+        uses: actions/configure-pages@v5
+    
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v3
+      working-directory: ./presentation/dist
+      with:
+        path: '.'
+
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v4
+       

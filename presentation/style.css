@@ -1,0 +1,16 @@
+ul li::marker {
+    color: rgb(250,153,38)
+}
+
+ol li::marker {
+    color: rgb(250,153,38);
+}
+
+ul li ul li::marker {
+    color: rgb(162,160,161)
+}
+
+.slidev-page {
+    background-image: url("/images/background.png");
+    background-size: 100% 100%;
+}
