@@ -3,7 +3,7 @@ import streamlit as st
 from streamlit_folium import st_folium
 import folium
 from folium.plugins import Draw
-from data import data
+from utils.data import data
 
 st.set_page_config(layout='wide')
 st.title("Folium Integration with Streamlit")
@@ -28,6 +28,7 @@ for index, drawing in enumerate(data['all_drawings']):
     tooltip_name = data['regions_data'].get(index, {}).get('name')
     tooltip_danger = data['regions_data'].get(index, {}).get('danger')
     tooltip = f"<string>{tooltip_name}</strong><br />{tooltip_danger}"
+    # This should be done with single line but for some reason is buggy... I don't have time to debug it ;)
     if index == data['selected_region']:
         folium.GeoJson(drawing, style_function=lambda f: {'color': 'red'}, tooltip=tooltip, zoom_on_click=True).add_to(map)
     else:

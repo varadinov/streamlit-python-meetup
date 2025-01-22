@@ -415,6 +415,7 @@ layout: center
 # It's showtime 
 Part 2
 
+
 ---
 layout: default
 ---
@@ -426,6 +427,38 @@ layout: default
 * Restricted Customization for Mobile Responsiveness
 * Limited Support for Real-Time Applications
 * UI is not easily testable
+
+
+---
+layout: default
+dragPos:
+  qr_code: 346,219,246,247
+---
+
+# It's feedback time
+* Feedback website
+  * https://presentation-feedback.streamlit.app/
+
+<img v-drag="'qr_code'" src="/images/qr_code_feedback.png">
+
+---
+layout: default
+dragPos:
+  qr_code: 727,122,212,216
+---
+
+# Presentation
+* Presentation
+  * https://varadinov.github.io/streamlit-python-meetup/
+  
+* Demos
+  * https://github.com/varadinov/streamlit-python-meetup/tree/main/demos
+
+* Feedback app source code
+  * https://github.com/varadinov/streamlit-presentation-feedback
+
+
+<img v-drag="'qr_code'" src="/images/qr_code_presentation.png">
 
 ---
 layout: center
