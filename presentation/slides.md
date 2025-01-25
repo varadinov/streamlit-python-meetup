@@ -320,7 +320,7 @@ layout: default
 layout: default
 ---
 # Caching
-* Built in mechanisum for caching
+* Built in mechanism for caching
 * Store the results of time-consuming functions or operations
 * Two main caching decorators:
     - **@st.cache_data**: cache functions that load or process data
@@ -330,8 +330,8 @@ layout: default
 layout: default
 ---
 # Session Management
-* Built in mechanisum for session store
-* Allows Streamlit to persist data across reruns of the app
+* Built in mechanism for session store
+* Allows Streamlit to persist data across reruns
 * Eetaining variable values or user interactions
 * Access session state with **st.session_state**
 
@@ -370,9 +370,9 @@ layout: default
 # Authentication
 * Local accounts
     - Implement your own login form
-    - External compoenents for login form
+    - External components for login form
 * OAuth2 & OpenID Connect
-    - External compoenents for OAuth 2 login
+    - External components for OAuth 2 login
 
 
 ---
@@ -387,7 +387,7 @@ layout: default
 ---
 layout: default
 ---
-# Comming Soon
+# Coming Soon
 * Native support for writing cookies
 * Session based on cookies
 * Native authentication support
