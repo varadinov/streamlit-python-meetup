@@ -10,6 +10,7 @@ st.title("Infrastructure Diagram as Code")
 
 # Sidebar inputs
 st.sidebar.header("Diagram Configuration")
+st.write("Adjust the configuration in the sidebar and click 'Generate Diagram' to create your custom diagram.")
 diagram_name = st.sidebar.text_input("Diagram Name", "My Infrastructure Diagram")
 with_lb = st.sidebar.checkbox("Include Load Balancer", value=True)
 num_ec2_instances = st.sidebar.slider("Number of EC2 Instances", 1, 5, 3)
@@ -24,10 +25,9 @@ if st.button("Generate Diagram"):
             database = RDS("Database") if with_db else None
 
             if lb:
-                lb >> ec2_instances
+                _ = lb >> ec2_instances
             if database:
-                ec2_instances >> database
+                _ = ec2_instances >> database
 
         st.image(tmpfile.name)
 
-st.write("Adjust the configuration in the sidebar and click 'Generate Diagram' to create your custom diagram.")

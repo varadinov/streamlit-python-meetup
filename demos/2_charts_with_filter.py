@@ -6,7 +6,7 @@ from datetime import datetime, timedelta
 def generate_random_data():
     today = datetime.today()
     last_month = today - timedelta(days=30)
-    date_range = pd.date_range(start=last_month, end=today, freq='H')  # Hourly data
+    date_range = pd.date_range(start=last_month, end=today, freq='h')  # Hourly data
     data = pd.DataFrame({
         'datetime': date_range,
         'value': np.random.randint(1, 100, size=len(date_range))

@@ -5,11 +5,12 @@ import numpy as np
 st.title("Streamlit Chart Demo")
 st.subheader("Dynamic Charts with Random Data")
 
-# Generate random data
+# Sidebar
 st.sidebar.header("Chart Configuration")
 rows = st.sidebar.slider("Number of Rows", 10, 100, 50)
 cols = st.sidebar.slider("Number of Columns", 1, 5, 3)
 
+# Generate random data
 data = pd.DataFrame(
     np.random.randn(rows, cols),
     columns=[f"Column {i+1}" for i in range(cols)]

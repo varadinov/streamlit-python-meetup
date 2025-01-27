@@ -11,9 +11,6 @@ client = OpenAI(
   api_key=os.environ['OPENAI_API_KEY'],
 )
 
-if "openai_model" not in st.session_state:
-    st.session_state["openai_model"] = "mistralai/mistral-7b-instruct:free"
-
 if "messages" not in st.session_state:
     st.session_state.messages = [{"role": "system", "content": "You are an assistant that only discusses streamlit topics. Do not answer questions outside this scope."}]
 
@@ -29,7 +26,7 @@ if prompt := st.chat_input("What is up?"):
 
     with st.chat_message("assistant"):
         stream = client.chat.completions.create(
-            model=st.session_state["openai_model"],
+            model="mistralai/mistral-7b-instruct:free",
             messages=[
                 {"role": m["role"], "content": m["content"]}
                 for m in st.session_state.messages

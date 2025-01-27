@@ -20,3 +20,11 @@ onnxruntime==1.20.1
 
 # Required for process statistics demo
 psutil==6.1.1
+
+# Required for the Folium Map Demo
+folium==0.19.4
+streamlit_folium==0.24.0
+
+# Diagrams Demo
+# You need also graphviz os package installed (e.g. sudo apt-get install graphviz)
+diagrams==0.24.1

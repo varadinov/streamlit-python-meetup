@@ -16,7 +16,7 @@ if "email" not in st.session_state:
     token_endpoint = "https://github.com/login/oauth/access_token"
     api_endpoint =  "https://api.github.com"
     
-    st.title("Feedback Application")
+    st.title("OAuth2 Authentication Demo")
     st.write("This is a demo feedback application for the Sofia Python MeetUp")
     
     # Create an OAuth2Component instance

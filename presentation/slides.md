@@ -332,7 +332,7 @@ layout: default
 # Session Management
 * Built in mechanism for session store
 * Allows Streamlit to persist data across reruns
-* Eetaining variable values or user interactions
+* Keeps variable values or user interactions
 * Access session state with **st.session_state**
 
 ---
