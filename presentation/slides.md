@@ -7,7 +7,7 @@ transition: slide-left
 ---
 
 # Create Simple Web Apps
-## With just few lines of code
+## With just a few lines of code
 
 ---
 layout: default
