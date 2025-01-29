@@ -12,6 +12,13 @@ transition: slide-left
 ---
 layout: default
 ---
+# Presentation Video Recording
+<Youtube id="n1dOZyrWAbU" width="900" height="400"/>
+
+
+---
+layout: default
+---
 # About Me
 * Names
   - Borislav Varadinov​s
@@ -64,9 +71,10 @@ layout: default
 layout: default
 ---
 # Use Cases
-* Business Intelligence Apps
 * Reporting Apps
-* Proof of Concept Apps
+* Interactive Dashboards Apps
+* Business Intelligence Apps
+* Proof of Concept and Demo Apps
 * Simple Interactive Web Apps
 
 ---
@@ -319,6 +327,16 @@ layout: default
 ---
 layout: default
 ---
+# Session Management
+* Built in mechanism for session store
+* Allows Streamlit to persist data across reruns
+* Keeps variable values or user interactions
+* Access session state with **st.session_state**
+
+
+---
+layout: default
+---
 # Caching
 * Built in mechanism for caching
 * Store the results of time-consuming functions or operations
@@ -326,14 +344,6 @@ layout: default
     - **@st.cache_data**: cache functions that load or process data
     - **@st.cache_resource**: cache objects that need to be created only once per session 
 
----
-layout: default
----
-# Session Management
-* Built in mechanism for session store
-* Allows Streamlit to persist data across reruns
-* Keeps variable values or user interactions
-* Access session state with **st.session_state**
 
 ---
 layout: default
@@ -382,6 +392,7 @@ layout: default
 * Streamlit Community Cloud
 * Streamlit in Snowflake
 * Docker
+* VM or Physical Machine
 
 
 ---
@@ -392,8 +403,8 @@ layout: default
 * Session based on cookies
 * Native authentication support
 * Native authentication with OAuth2 & OpenID Connect
-* Native redirect 
 * Hooks to add identity information in st.user
+* Native redirect 
 * Support for custom http endpoints 
 
 ---
@@ -402,9 +413,9 @@ layout: default
 # Streamlit vs ...
 * Grafana
 * PowerBI and Tableau
-* Panel
 * Gradio
 * Voila
+* Panel
 * NiceGUI
 * More...
 
