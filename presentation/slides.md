@@ -20,8 +20,8 @@ layout: default
 layout: default
 ---
 # About Me
-* Names
-  - Borislav Varadinov​s
+* Name
+  - Borislav Varadinov​
 * Company
   - Dell Technologies​
 * Job Title​
